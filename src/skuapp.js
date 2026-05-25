@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const SECTIONS = [
   "Seksyen Kualiti, Majlis & Protokol (SKMP)",
@@ -29,6 +30,7 @@ export default function App() {
       <p style={{ marginTop: 20 }}>
         Active section: <b>{activeSection}</b>
       </p>
+      <Analytics />
     </div>
   );
 }
